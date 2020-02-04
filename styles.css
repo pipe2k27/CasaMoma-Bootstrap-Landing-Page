@@ -1,0 +1,424 @@
+body {
+  text-align: center;
+}
+
+ul {
+  text-align: left;
+}
+
+/* navigation section */
+.row {
+  margin: 0;
+}
+
+.navigation {
+  /* height: 75px; */
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  color: white;
+  z-index: 1;
+}
+
+.nombre {
+  position: relative;
+  display: inline-block;
+  height: 50px;
+}
+
+.mini {
+  position: absolute;
+  height: 65px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  top: 5px;
+  left: 250px;
+}
+
+.navbar {
+  font-size: 1.3rem;
+}
+
+@media (max-width:376px) {
+  .mini {
+    left: 235px;
+    height: 50px;
+    visibility: hidden;
+  }
+}
+
+/* intro section */
+.intro {
+  background-color: #2c261f;
+  color: white;
+  height: 600px;
+  position: relative;
+  top: 75px;
+}
+
+.fondy{
+  /* esta es la foto de fondo para navegadores chicos  */
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  max-width: 100%;
+  left: 0;
+  bottom: 0;
+}
+
+.fondy2{
+  /* esta es la foto de fondo para navegadores chicos  */
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  max-width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.faded{
+  /* esta es l foto de fondo de navegadores grandes Hasta 1142px */
+  position: absolute;
+  max-width: 100%;
+  width: 100%;
+  left: 0;
+  top: -100px;
+}
+
+.primera {
+  position: relative;
+  height: 600px;
+}
+
+.description {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: left;
+  padding: 3%;
+}
+
+.burgass {
+  font-size: 3rem;
+  font-family: "Bowlby One SC";
+  padding: 0 10%;
+}
+
+.details {
+  font-size: 1.1rem;
+  font-family: "raleway";
+  padding: 0 10%;
+}
+
+.botones {
+  text-align: center;
+  font-family: "raleway";
+}
+
+.burgy {
+  height: 350px;
+  position: absolute;
+  top: 150px;
+  left: 50%;
+}
+
+.bandera {
+  height: 22px;
+}
+@media (max-width:1380px) {
+  /* esto es para corregir el logo que se va muy a la derecha */
+  .burgy {
+    left: 20%;
+  }
+}
+
+@media (max-width:1142px) {
+  .fondy{
+    /* esta es la foto de fondo para navegadores chicos  */
+    visibility: visible;
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    left: 0;
+    bottom: 0;
+  }
+  .faded{
+    /* esta es l foto de fondo de navegadores grandes Hasta 1142px */
+    position: absolute;
+    max-width: 100%;
+    width: 100%;
+    left: 0;
+    top: -100px;
+    visibility: hidden;
+  }
+
+}
+@media (max-width:1000px) {
+  .intro {
+    height: 910px;
+  }
+
+  .burgy {
+    height: 300px;
+    position: relative;
+    top: -12px;
+    left: 0;
+  }
+
+  .botones {
+    position: relative;
+    right: 20px;
+  }
+
+  .boto {
+    display: block;
+    width: 100%;
+    margin: 10px;
+    z-index: 2;
+  }
+
+  .mini {
+    height: 55px;
+    top: 10px;  }
+}
+@media (max-width:415px) {
+  .intro {
+    height: 1180px;
+  }
+
+.fondy2{
+  /* esta es la foto de fondo para navegadores chicos  */
+  visibility: visible;
+  position: absolute;
+  width: 100%;
+  max-width: 100%;
+  top: 0;
+  bottom: 0;
+}
+}
+@media (max-width:376px) {
+/* aca hago un par e correciones para iphone tamanio 8 */
+.intro {
+  height: 1115px;
+}
+
+  .burgy {
+    height: 260px;
+    top: 0;
+  }
+
+  .burgass {
+    font-size: 2.5rem;
+  }
+}
+
+/* caracteristicas section */
+.caracteristicas {
+  height: auto;
+  position: relative;
+  top: 75px;
+  color: white;
+  background-color: #2d132c;
+}
+
+.features {
+  padding: 5% 11% 3%;
+}
+
+.fea {
+  padding: 0 3%;
+}
+
+.features2 {
+  padding: 2% 5%;
+}
+
+.fotito {
+  height: 250px;
+  outline: solid;
+  margin-bottom: 40px;
+}
+
+.fea:hover {
+  color: #f0f0f0;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 1.1rem;
+}
+
+@media (max-width:1380px) {
+
+  .fotito {
+    height: 200px;
+  }
+
+  .features {
+    padding: 3% 5%;
+  }
+}
+
+@media (max-width:700px) {
+  .caracteristicas {
+    height: auto;
+  }
+
+  .fotito {
+    height: 220px;
+    margin-bottom: 40px;
+  }
+
+  .features {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width:376px) {
+  .fotito {
+    height: 200px;
+    margin-bottom: 40px;
+  }
+}
+
+/* quienes somos section */
+.quienes {
+  position: relative;
+  top: 75px;
+  padding: 7% 15%;
+  background-color: #801336;
+  color: white;
+}
+
+.loggy {
+  height: 135px;
+  float: left;
+  margin-right: 10px;
+  position: relative;
+  top: 18px;
+}
+
+.nosotros {
+  font-size: 1.2rem;
+  margin-top: 25px;
+  color: white;
+}
+
+@media (max-width:1000px) {
+  .quienes {
+    padding: 7% 4%;
+  }
+
+  .loggy {
+    position: relative;
+    top: 18px;
+  }
+}
+
+/* precios section */
+.precios {
+  background-color: #801336;
+  position: relative;
+  top: 75px;
+  padding-top: 50px;
+}
+
+.caja {
+  padding: 2% 10%;
+}
+
+.uno {
+  color: white;
+  padding-top: 3%
+}
+
+.dos {
+  color: white;
+}
+
+@media (max-width:1380px) {
+  .cuadd {
+    margin: 10px 0;
+  }
+
+  .caja {
+    padding: 2% 2%;
+  }
+}
+
+@media (max-width:700px) {
+  .precios {
+    height: auto;
+  }
+}
+
+@media (max-width:376px) {
+  .text-muted {
+    font-size: 1.8rem;
+  }
+}
+
+/* fotos section */
+.fotos {
+  background-color: #c72c41;
+  position: relative;
+  top: 75px;
+  text-align: center;
+}
+
+.galery {
+  padding-top: 2%;
+  color: white;
+}
+
+.foty {
+  height: 650px;
+  width: 975px;
+  padding: 2%;
+}
+
+@media (max-width:1030px) {
+  .fotos {
+    height: 400px;
+  }
+
+  .foty {
+    width: 500px;
+    height: auto;
+  }
+}
+
+@media (max-width:700px) {
+  .fotos {
+    height: 300px;
+  }
+
+  .foty {
+    height: 230px;
+    width: 350px;
+  }
+}
+
+/* foot section */
+.foot {
+  height: 300px;
+  background-color: #ee4540;
+  position: relative;
+  top: 75px;
+  color: #212529;
+}
+
+.red {
+  margin: 4% 1% 2%;
+}
+
+.datos {
+  padding: 0;
+  margin: 0;
+  font-family: "raleway";
+}
+
+@media (max-width:700px) {
+  .foot {
+    height: auto;
+    padding-bottom: 5%;
+  }
+}
